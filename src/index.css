@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+
+
+  .main-div{
+    @apply flex items-center justify-center h-screen bg-[#f3f3f3];
+  }
+
+  .card-div{
+    @apply bg-[#1F1F27] rounded-2xl;
+  }
+
+  .flex-container{
+    @apply flex flex-col md:flex-row rounded-l-xl;
+  }
+
+  .image{
+    @apply object-fill rounded-xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-300;
+  }
+
+  .newsletter-content{
+    @apply p-6 md:p-12;
+  }
+
+  .newsletter-heading{
+    @apply text-xl font-tittilum font-medium text-center text-white font-bold md:text-left;
+  }
+
+  .newsletter-text{
+    @apply max-w-xs my-4 text-xs font-tittilum leading-5 tracking-wide text-center font-bold text-white md:text-left;
+  }
+
+  .newsletter-input-container{
+    @apply flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0;
+  }
+
+  .input-box{
+    @apply p-2 px-4 text-sm text-center text-white bg-[#1F1F27] border border-[#f7f4f1] placeholder:text-sm placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none;
+  }
+
+  .btn{
+    @apply px-5 py-3 text-xs border-2 border-[#e10600] rounded-md text-white font-bold bg-[#e10600] hover:bg-white hover:text-[#1F1F27] hover:border-[#e10600] hover:border-2 hover:border-solid hover:border-spacing-1 duration-700;
+  }
+
+}
+
